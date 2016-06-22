@@ -1,0 +1,9 @@
+*.pb*
+Debug
+Release
+bin
+obj
+*.suo
+*.sdf
+*.vcxproj.user
+build
