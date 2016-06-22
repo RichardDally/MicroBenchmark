@@ -12,7 +12,6 @@ file(GLOB_RECURSE SOURCE_FILES headers/* src/*)
 add_executable(MicroBenchmark ${SOURCE_FILES})
 
 target_link_libraries(MicroBenchmark ${benchmark_LIBRARIES})
-if ("${CMAKE_SYSTEM_NAME}" MATCHES "Windows")                                                                                                                                                    
+if ("${CMAKE_SYSTEM_NAME}" MATCHES "Windows")
     target_link_libraries(MicroBenchmark Shlwapi)
 endif()
-
